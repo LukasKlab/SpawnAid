@@ -13,6 +13,7 @@ import javax.swing.plaf.IconUIResource;
 public class SetSpawnCommand implements CommandExecutor {
 
     private final SpawnAid spawnAid;
+
     public SetSpawnCommand(SpawnAid spawnAid) {
         this.spawnAid = spawnAid;
     }
