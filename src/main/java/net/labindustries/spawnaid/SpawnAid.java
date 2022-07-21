@@ -2,7 +2,7 @@ package net.labindustries.spawnaid;
 
 import net.labindustries.spawnaid.commands.SetSpawnCommand;
 import net.labindustries.spawnaid.commands.SpawnCommand;
-import net.labindustries.spawnaid.events.PlayerJoin;
+import net.labindustries.spawnaid.events.SpawnEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class SpawnAid extends JavaPlugin {
@@ -19,7 +19,7 @@ public final class SpawnAid extends JavaPlugin {
         getCommand("setspawn").setExecutor(new SetSpawnCommand(this));
         getCommand("spawn").setExecutor(new SpawnCommand(this));
 
-        getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
+        getServer().getPluginManager().registerEvents(new SpawnEvent(this), this);
 
     }
 
