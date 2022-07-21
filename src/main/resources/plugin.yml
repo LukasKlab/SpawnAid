@@ -1,0 +1,7 @@
+name: SpawnAid
+version: '${version}'
+main: net.labindustries.spawnaid.SpawnAid
+api-version: 1.19
+authors: [ Lukas02 ]
+description: A spawn plugin
+website: labindustries.net
