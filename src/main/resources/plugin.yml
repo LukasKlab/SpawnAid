@@ -5,3 +5,7 @@ api-version: 1.19
 authors: [ Lukas02 ]
 description: A spawn plugin
 website: labindustries.net
+commands:
+  setspawn:
+  spawn:
+
